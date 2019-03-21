@@ -39,6 +39,7 @@ header ul li img{
 	height: 50px;
 	padding:2px;
 	margin-left:30px;
+	list-style: none;
 }
 
 nav .menu{
