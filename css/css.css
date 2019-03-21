@@ -1,5 +1,8 @@
 *{margin: 0px;
 	padding: 0px;
+	-web-kit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
 }
 
 body{
@@ -28,6 +31,65 @@ header h1{
         font-family:"Arial, Helvetica", sans-serif;
         color:#000000;
 }
+.social{
+    	position: fixed;
+    	font-size: 20px;
+    	display:flex;
+    	justify-content:space-around;
+    	margin-left: 1100px;
+    	z-index:4000;
+    	text-decoration: none;
+    	padding:5px;
+    	display: flex;
+    }
+    .social ul{
+    background-color:transparent;
+    display:flex;
+    list-style: none; 
+    justify-content: space-around;
+    }
+    .social ul li a{
+    	display:inline-block; /*para poder agregar un padding*/
+    	color:#ffffff;
+    	background:#000000;
+    	padding: 10px, 15px; 
+    	text-decoration: none;
+    	justify-content: space-around;
+    	-webkit-transition:all 500ms ease;
+    	-o-transition:all 500ms ease;
+    	transition: all 500ms ease;
+    }
+    
+
+    .icon{
+    	color:#ffffff;
+    	text-decoration: none;
+    	padding:5px;
+    	display: flex;
+    	}
+     .social ul li .icon-facebook{
+    	background: #3F60A5;
+    }
+     .social ul li .icon-twitter{
+    
+    	background: #339dc5;
+    }
+     .social ul li .icon-youtube{
+    	background: #E83028;
+    }
+     .social ul li .icon-instagram{
+    	background: #e4405f;
+    }
+    .icon:first-child{
+    	border-radius:5px;
+    }
+    .icon:last-child{
+    	border-radius:5px;
+    }
+    .social ul li a:hover{
+    	padding: 10px, 30px;
+    	background: #000;
+    }
 img{
 	width: 10%;
 	height: 120px;
@@ -51,13 +113,28 @@ nav .menu{
 #btn-menu{
 display:none;
 }
+ header label{
+ 	display: block;
+ 	width: 30%;
+ 	height: 50px;
+ 	padding: 10px;
+ 	justify-content: left;
+ 	display: none;
+ }
+ header label:hover{
+ 	cursor: pointer;
+ 	background: rgba(0 0 0 0.3);
+ }
 .menu ul{
+	margin: 0;
+	padding: 0px;
     background-color:transparent;
     display:flex;
     list-style: none; /*quita los puntos de la ista*/
  
 }
-.menu a{
+
+.menu li a{
     display:block;
     padding: 50px 18px; 
     color:#ffffff; 
@@ -77,6 +154,8 @@ display:none;
         transform: translateX(0%); /*para que aparesca el menu*/
         
     }
+  
+
 
     .inicio{
     	width: 100%;
@@ -344,7 +423,7 @@ section h1{
      text-align: center;
      box-sizing:border-box;
 }    
-@media(max-width:780px){  
+@media(max-width:768px){  
     body{
         font-size:12px;  
     }
@@ -357,20 +436,28 @@ section h1{
     header h1{
         font-size:17px; 
     }
-    
+
 
     header label{
         display: block;
+        align-items: left;
     }
     .menu{
         position: absolute;
-        top:50px;
-        left:0px;
+        background:#54E5F8;
+        top:120px;
+        opacity: 0.9;
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
         transform: translateX(-100%);
-        transition: all 0.3s;
+        transition: all 0.5s;
     }
     .menu ul{
-        display: block;
+        flex-direction: column;
+    }
+    .menu ul li{
+
     }
     .menu ul li:hover ul{
       display:all;
@@ -381,6 +468,7 @@ section h1{
         right: 5px;
     }
     #btn-menu:checked ~ .menu{
+    	margin: 0px;
         transform: translateX(0%); /*para que aparesca el menu*/
         
     }
@@ -389,6 +477,20 @@ section h1{
     }
     .menu ul ul a{
         padding: 15px 40px;
+    }
+    nav .menu h2{
+    	z-index: 100px;
+    }
+    .social{
+    	
+    	width: 30%;
+    }
+    header ul li{
+     list-style: none;
+    }
+    header ul li img{
+     display: none;
+     list-style: none;
     }
     .inicio{
      width:100%;
@@ -403,7 +505,7 @@ section h1{
     }
     .inicio h2{
     	font-size: 12px;
-    	margin-left:10px;
+    	margin-left:30px;
     }
     
 
@@ -461,6 +563,7 @@ section h1{
    .active section span h1{
    	font-size: 10px;
    }
+
      .hamburguer{
     width:100%;
     height:100px;
