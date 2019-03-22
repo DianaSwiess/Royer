@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7u0tsr');
-  src:  url('fonts/icomoon.eot?7u0tsr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7u0tsr') format('truetype'),
-    url('fonts/icomoon.woff?7u0tsr') format('woff'),
-    url('fonts/icomoon.svg?7u0tsr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?78rxww');
+  src:  url('fonts/icomoon.eot?78rxww#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?78rxww') format('truetype'),
+    url('fonts/icomoon.woff?78rxww') format('woff'),
+    url('fonts/icomoon.svg?78rxww#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+  content: "\e900";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-video-camera:before {
+  content: "\e914";
+}
+.icon-mic:before {
+  content: "\e91e";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
 .icon-menu:before {
   content: "\e9bd";
 }
@@ -38,4 +59,22 @@
 }
 .icon-youtube:before {
   content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-blogger:before {
+  content: "\eab7";
+}
+.icon-tumblr:before {
+  content: "\eab9";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead1";
 }
