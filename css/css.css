@@ -34,7 +34,7 @@ header h1{
     	display:flex;
     	justify-content:space-around;
     	margin-left: 1100px;
-    	z-index:4000;
+    	z-index:1;
     	text-decoration: none;
     	padding:5px;
     	display: flex;
@@ -76,6 +76,9 @@ header h1{
     }
      .social ul li .icon-instagram{
     	background: #e4405f;
+    }
+    .social ul li .icon-pinterest{
+    	background: #cb2027;
     }
     .icon:first-child{
     	border-radius:5px;
@@ -121,6 +124,10 @@ display:none;
  header label:hover{
  	cursor: pointer;
  	background: rgba(0 0 0 0.3);
+ }
+ header ul li{
+ 	list-style: none;
+
  }
 .menu ul{
 	margin: 0;
@@ -610,7 +617,7 @@ img{
 
 }
 
-
+}
 
 
 
