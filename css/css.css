@@ -9,8 +9,7 @@ body{
 .contenedor{
 	width: 100%;
 	height: 100%;
-	background:#ffffff;
-
+	background:gray;
 }
 header{
 	width: 100%;
@@ -235,7 +234,23 @@ display:none;
     	font-size: 15px;
     	font-family: "Comic Sans MS", cursive, sans-serif;
     }
-    
+    .info{
+        width:50%;
+        height:600px;
+        padding: 20px;
+        float:left;
+        justify-content: center;
+        text-align: center;
+        background:#339dc5;
+        box-sizing: border-box;
+    }
+    .info img{
+        width: 70%;
+        height: 450px;
+    }
+    .info h1{
+        color:#000;
+    }
     .active{
     	width: 100%;
     	height: 300px;
@@ -288,6 +303,34 @@ section h1{
 	color: #ffffff;
 	z-index: 1;
 }
+     .contacto{
+        width: 100%;
+        height: 600px;
+        padding: 20px;
+        background:#3F60A5;
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-rows: auto;
+        box-sizing: border-box;
+
+     }
+     .contacto img{
+        width: 60%;
+        height: 400px;
+        margin-left: 300px;
+        float:left;
+     }
+     .contacto h1{
+      color:#000;
+      font-size: 30px;
+      text-align: center;
+     }
+     .contacto h2{
+        color:#000;
+        font-size:20px;
+        text-align:center;
+        font-family:verdana;
+     }
 
     .hamburguer{
     	width: 100%;
@@ -308,6 +351,7 @@ section h1{
     	height: 300px;
     	padding: 20px;
     	text-align: center;
+        margin-left:0px;
     	align-content:center;
     	float: left;
     }
@@ -415,8 +459,34 @@ section h1{
         font-family:"Arial, Helvetica", sans-serif;
         color:#000000;
       }
+      .wrapper {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 20px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color:#ffffff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.box img{
+    width: 100%;
+        height: 200px;
+        margin:5px;
+        box-sizing:border-box;
+}
+.box h1{
+    color:#000;
+    font-family: Arial;
+    font-size: 30px;
+}
      #footer {
-     position: relative;
+     position:relative;
      background:#000000;
      opacity: 0.8;
      color:white;
@@ -576,6 +646,11 @@ section h1{
     width:100%;
     height:250px;
 }
+article img{
+    width: 100%;
+    height: 200px;
+    margin-left:0px;
+}
 .row{
     width:100%;
     height:300px;
@@ -613,8 +688,64 @@ img{
     border:#707070;
     margin-left:5px;
 }
+.info{
+        width: 100%;
+        height: 350px;
+         box-sizing: border-box;
+    }
+    .info img{
+        width: 100%;
+        height: 250px;
 
+    }
+   
+   #footer{
+    margin-top:200px;
+    width: 100%;
+    height: 20px;
+   }
+   .contacto{
+        width: 100%;
+        height: 500px;
+        padding: 20px;
+        background:#3F60A5;
+        box-sizing: border-box;
 
+     }
+     .contacto img{
+        width: 100%;
+        height: 200px;
+        margin-left:0px;
+     }
+
+     .wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-columns: auto;
+  grid-gap: 20px;
+  background-color:#ffffff;
+  color: #000;
+}
+
+.box {
+  background-color:#ffffff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.box img{
+    width: 100%;
+        height: 200px;
+        margin:5px;
+        box-sizing:border-box;
+}
+.box h1{
+    color:#000;
+    font-family: Arial;
+    font-size: 30px;
+}
 }
 
 }
