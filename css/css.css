@@ -611,6 +611,10 @@ section h1{
     height:450px;
     padding: 0px;
         }
+    iframe{
+	width:50%;
+    height:300px;
+	}
 
     .active {
     width:100%;
