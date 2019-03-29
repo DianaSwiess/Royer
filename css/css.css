@@ -226,12 +226,16 @@ display:none;
     }
     .video{
     	width: 50%;
-    	height: 460px;
+    	height: 560px;
     	justify-content: center;
     	padding: 20px;
     	float:left;
         box-sizing: border-box;
     }
+iframe{
+	width:560px;
+    	height:315px;
+}
 
     .video p{
     	color:black;
