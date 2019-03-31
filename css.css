@@ -228,6 +228,7 @@ display:none;
     	width: 50%;
     	height: 460px;
     	justify-content: center;
+	backgroud:blue;
     	padding: 20px;
     	float:left;
         box-sizing: border-box;
