@@ -89,15 +89,13 @@
 
 
 .icon-menu {
-width: 40px;  /* Ancho del icono */
-height: 40px;  /* Alto del icono */
+font-size: 40px;  /* Alto del icono */
 box-sizing: border-box;
-background:#54E5F8;; /* Fondo del icono */
-border: 1px solid #2BA6DC;  /* Borde del icono */
 position: absolute;
+text-decoration: none;
+display: flex;
 margin-top: 5px;
 margin-left: 5px;
-box-shadow: inset 0 5px 10px -8px #2BA6DC, 0 2px 3px -1px rgba(0,0,0,.1);  /* Sombras */
 }
 
     .inicio{
@@ -119,21 +117,21 @@ box-shadow: inset 0 5px 10px -8px #2BA6DC, 0 2px 3px -1px rgba(0,0,0,.1);  /* So
     
     .about{
     width:100%;
-    height:530px;
+    height:550px;
     
      }
      .about h1{
-        font-size:25px;
+        font-size:20px;
         text-indent:0px;
         text-align: left;
      
      }
      .about h2{
-     	font-size:22px;
+     	font-size:17px;
      }
 
      .about p{
-     	font-size:19px;
+     	font-size: 17px;
      }
     
     .video{
@@ -142,7 +140,7 @@ box-shadow: inset 0 5px 10px -8px #2BA6DC, 0 2px 3px -1px rgba(0,0,0,.1);  /* So
     padding: 0px;
         }
     .video iframe{
-     width: 93%;
+     width: 100%;
      height:300px;
      margin-left:10px;
     }
@@ -218,8 +216,13 @@ height: 200px;
 }
 .green{
     width:100%;
-    height:200px;
+    height:250px;
   
+}
+.green ul{
+    margin-left:50px;
+    position:relative;
+
 }
 .green section{
     width:35%;

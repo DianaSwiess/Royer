@@ -60,6 +60,9 @@ header h1{
     	padding:5px;
     	display: flex;
     	}
+    .icon-menu{
+        text-decoration: none;
+    }
     
      .social ul li .icon-facebook{
     	background: #3F60A5;
@@ -87,6 +90,7 @@ header h1{
     	padding: 10px, 30px;
     	background: #000;
     }
+
 img{
 	width: 10%;
 	height: 120px;
@@ -382,9 +386,34 @@ span a h1:hover{
     	background-color:#F2EDED;
     	color:#000000;
     	text-align: center;
+        align-items: center;
+        justify-content: center;
     	padding: 20px;
     	float: left;
     	box-sizing: border-box;
+    }
+   
+    .green ul{
+    background-color:transparent;
+    font-size: 20px;
+    display:flex;
+    list-style: none; 
+    justify-content:flex-start;
+    text-decoration: none;
+    background: transparent;
+    z-index: 1;
+    padding: 20px;
+    }
+    .green ul li a{
+        display:inline-block; /*para poder agregar un padding*/
+        color:#ffffff;
+        background:#000000;
+        padding: 10px, 15px; 
+        text-decoration: none;
+        justify-content: space-around;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition: all 500ms ease;
     }
     .green h1{
       font-size:30px; 
@@ -413,6 +442,32 @@ span a h1:hover{
     box-sizing: border-box;
 
 }
+   .green ul li .icon-facebook{
+        background: #3F60A5;
+    }
+     .green ul li .icon-twitter{
+    
+        background: #339dc5;
+    }
+     .green ul li .icon-youtube{
+        background: #E83028;
+    }
+     .green ul li .icon-instagram{
+        background: #e4405f;
+    }
+    .green ul li .icon-pinterest{
+        background: #cb2027;
+    }
+    .icon:first-child{
+        border-radius:5px;
+    }
+    .icon:last-child{
+        border-radius:5px;
+    }
+    .green ul li a:hover{
+        padding: 10px, 30px;
+        background: #000;
+    }
    .green section span a h1{
    	font-size: 15px;
    }
