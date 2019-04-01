@@ -81,7 +81,9 @@ input:focus{
 	height:200px;
 }
 	.green ul{
-	margin-top:10px;
+	justify-content: center;
+	margin-top:0px;
+	margin-left:0PX;
 }
 .green h1{
 	padding:20px;
