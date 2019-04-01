@@ -32,17 +32,7 @@
       margin-left: 200px;
     }
     .social{
-        width: 100%;
-        float:left;
-        text-align: center;
-        border-top:1px solid #fff;
-        z-index: 2000;
-
-    }
-    .social ul li a{
-        float:left;
-        max-width: 60px;
-
+        display:none;
     }
     
     nav{
