@@ -24,7 +24,7 @@ header h1{
         color:#000000;
 }
 .social{
-    	position:fixed;
+    	position:absolute;
     	font-size: 20px;
     	display:flex;
     	justify-content:space-around;
@@ -60,9 +60,7 @@ header h1{
     	padding:5px;
     	display: flex;
     	}
-    .icon-menu{
-        text-decoration: none;
-    }
+    
     
      .social ul li .icon-facebook{
     	background: #3F60A5;
@@ -141,7 +139,7 @@ display:none;
     color:#ffffff; 
     text-decoration: none; // quita el subrallado
 }
-.menu a:hover{ background-color: rgba(0,0,0,0.3);}
+/*.menu a:hover{ background-color: rgba(0,0,0,0.3); color:blue;}
 .menu a:focus{color:#f1f1f1; }   /*al pasar el cursor cambia el color*/
 
 .menu a span{
@@ -152,6 +150,7 @@ display:none;
     position: absolute;
 
 }
+.menu ul li a h1:hover{color:blue;}
 #btn-menu:checked ~ .menu{
         transform: translateX(0%); /*para que aparesca el menu*/
         
@@ -161,7 +160,7 @@ display:none;
 
     .inicio{
     	width: 100%;
-    	height: 500px;
+    	height: 780px;
     	background-image: url(../img/fondo.jpg);
     	background-repeat: no-repeat;
     	background-size:cover;
@@ -170,13 +169,13 @@ display:none;
     	display: flex;
     	padding: 40px;
     	flex-direction: column;
-    	justify-content:flex-start;
+    	justify-content:center;
     	align-items: left;  
     	float: left; 
     	box-sizing:border-box;
     }
     .inicio h1{
-    	margin-top: 120px;
+    	margin-top: 12px;
     	margin-left: 100px;
     	font-size: 30px;
     	font-family:"Lato", sans-serif;
@@ -187,27 +186,47 @@ display:none;
     	font-family: Arial, Helvetica, sans-serif;
     	color:#ffffff;
     }
+     .inicio section{
+    width:8%;
+    height:40px;
+    padding:10px;
+    border:solid .1rem #f1f1f1;
+    border-color: #ffffff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    color:#ffffff;
+    margin-top: 20px;
+    margin-left:100px;
+    position:relative;
+    text-align: center;
+    background-color:transparent;
+    box-sizing: border-box;
+
+}
+ .inicio span a h1{
+    font-size:17px;
+    color:#ffffff;
+    margin-top:0px;
+    margin-left:2px;
+    z-index: 1;
+}
+
+.inicio span a h1:hover{
+    color:blue;
+}
+     
 
     .about{
     	width: 50%;
-    	height: 460px;
+    	height: 500px;
     	background:#ffffff;
     	padding: 20px;
     	float:left;
     	justify-content: center;
     	 box-sizing: border-box;
     }
-    .social1{position: fixed;
-        font-size: 20px;
-        display:flex;
-        justify-content:space-around;
-        margin-left: 1100px;
-        z-index:1;
-        text-decoration: none;
-        padding:5px;
-        display: none;
-    
-    }
+   
     .about h1{
     	font-size:30px; 
        padding: 10px;
@@ -231,81 +250,26 @@ display:none;
       color: #000000;
       box-sizing: border-box;
     }
-    .video{
+    article{
     	width: 50%;
-    	height: 460px;
+    	height: 500px;
     	justify-content: center;
     	padding: 20px;
     	float:left;
         box-sizing: border-box;
     }
 
-    .video p{
+    article p{
     	color:black;
-    	font-size: 15px;
+    	font-size: 20px;
+        text-align: center;
     	font-family: "Comic Sans MS", cursive, sans-serif;
     }
    
-    .active{
-    	width: 100%;
-    	height: 300px;
-    	background-image:url(../img/cama.jpg);
-    	background-repeat: no-repeat;
-    	background-size:cover;
-    	background-position: relative;
-    	background-attachment: fixed;
-    	display:flex;
-    	padding:5px;
-    	flex-direction: column;
-    	justify-content:center;
-    	text-align:center;  
-    	float: left; 
-    	box-sizing:border-box;
-
-    }
-    .active:before {
-    content:"";
-    width:99%;
-    height:300px;
-    background-color:#000000;
-    position: absolute; /*importante para poder ver el color sobre la imagen*/
-    opacity: 0.3;
-    margin-left:0px;
-    box-sizing: border-box;
-}
-    section{
-    width:12%;
-    height:50px;
-    padding:10px;
-    border:solid .2rem #ffffff;
-    border-color: #ffffff;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    color:#ffffff;
-    margin-top: 20px;
-    margin-left:580px;
-    position:relative;
-    text-align: center;
-    align-items:center;
-    background-color:transparent;
-    z-index: 1;
-    box-sizing: border-box;
-
-}
-section h1{
-	font-size: 15px;
-	color: blue;
-	z-index: 1;
-}
-
-span a h1:hover{
-    color:#F8CF2A;
-}
 
     .hamburguer{
     	width: 100%;
-    	height: 80px;
+    	height: 100px;
     	background-color:#ffffff;
     	color:#000000;
     	text-align: center;
@@ -428,9 +392,9 @@ span a h1:hover{
     padding:10px;
     border:solid 2px #000000;
     border-color: #000000;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius:20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
     color:#000000;
     margin-left:600px;
     position:relative;
@@ -469,8 +433,12 @@ span a h1:hover{
         background: #000;
     }
    .green section span a h1{
-   	font-size: 15px;
+   	font-size: 17px;
+   
    }
+   .green span a h1:hover{
+    color:#000;
+      }
     
    
     h1{
@@ -506,7 +474,7 @@ span a h1:hover{
         float:left;
         justify-content: center;
         text-align: center;
-        background:#339dc5;
+        background:#A6D5F9;
         box-sizing: border-box;
     }
     .info img{
